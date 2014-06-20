@@ -2,7 +2,6 @@ var Router = Ember.Router.extend(); // ensure we don't share routes between all 
 
 Router.map(function() {
   this.resource('todos', { path: '/' });
-
   this.route('component-test');
   this.route('helper-test');
   // this.resource('posts', function() {
