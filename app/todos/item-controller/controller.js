@@ -7,7 +7,7 @@ export default Ember.ObjectController.extend({
       this.set('isEditing', false);
 
       if(Ember.isEmpty(this.get('model.title'))) {
-        this.send('removeTodo')
+        this.send('removeTodo');
       } else {
         this.get('model').save();
       }
