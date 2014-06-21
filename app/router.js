@@ -4,6 +4,7 @@ Router.map(function() {
   this.resource('todos', { path: '/' }, function() {
     //additional child routes
     this.route('active');
+    this.route('completed');
   });
   this.route('component-test');
   this.route('helper-test');
